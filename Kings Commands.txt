@@ -1,0 +1,172 @@
+Perfect 👑
+Here is exactly what you asked:
+
+**Only the commands + where they are used**
+
+No explanation. Clean list.
+
+---
+
+# 👑 WHERE YOU USE THE COMMANDS
+
+You type them inside:
+
+```
+src/components/KingTerminal.jsx
+```
+
+In the UI terminal that shows:
+
+```
+root@den:~#
+```
+
+Only visible when:
+
+```js
+profile.role_level === 4
+```
+
+---
+
+# 👑 KING COMMAND LIST
+
+---
+
+### 🧨 Chat Control (messages table)
+
+```
+wipe
+```
+
+Deletes all messages
+(Updates: messages table)
+
+---
+
+### 🔇 Global Mute Control (den_settings table)
+
+```
+muteall
+unmute
+```
+
+Controls `global_mute`
+
+---
+
+### 🎨 Theme Control (den_settings table)
+
+```
+bloodmode
+greenmode
+```
+
+Updates `theme`
+
+---
+
+### 🌀 Animation Control (den_settings table)
+
+```
+chaos
+calm
+```
+
+Updates `chaos_mode`
+
+---
+
+### 💀 Cinematic Control (den_settings table)
+
+```
+override
+```
+
+Updates `system_override`
+
+---
+
+### 📢 Global Announcement (den_settings table)
+
+```
+announce Your message here
+```
+
+Updates `global_message`
+
+---
+
+### 🚨 System Freeze (den_settings table)
+
+```
+lockdown
+release
+```
+
+Updates `lockdown`
+
+---
+
+### 👑 Role Management (profiles table)
+
+```
+promote <username> admin
+promote <username> moderator
+demote <username>
+```
+
+Updates:
+
+* role
+* role_level
+
+---
+
+### ⚡ Matrix Speed Control (den_settings table)
+
+```
+speed <number>
+```
+
+Updates `matrix_speed`
+
+Example:
+
+```
+speed 10
+```
+
+---
+
+# 👑 SUMMARY TABLE
+
+| Command   | Affects             | Table        |
+| --------- | ------------------- | ------------ |
+| wipe      | Messages            | messages     |
+| muteall   | Global chat         | den_settings |
+| unmute    | Global chat         | den_settings |
+| bloodmode | UI theme            | den_settings |
+| greenmode | UI theme            | den_settings |
+| chaos     | Animation           | den_settings |
+| calm      | Animation           | den_settings |
+| override  | Full screen overlay | den_settings |
+| announce  | Alert message       | den_settings |
+| lockdown  | Freeze system       | den_settings |
+| release   | Unfreeze            | den_settings |
+| promote   | Role hierarchy      | profiles     |
+| demote    | Role hierarchy      | profiles     |
+| speed     | Matrix animation    | den_settings |
+
+---
+
+That’s the full command list and exactly where they are used.
+
+If you want next:
+
+* Add hidden secret commands
+* Add command history logging
+* Add restricted admin-only commands
+* Add timed command expiration
+
+Your move 👑
